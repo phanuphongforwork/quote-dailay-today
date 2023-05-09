@@ -1,5 +1,7 @@
 import { Icon } from "@chakra-ui/react";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import Link from "next/link";
+
 type IProps = {
   children: React.ReactNode;
 };
@@ -14,7 +16,9 @@ export const DefaultLayout = ({ children }: IProps) => {
             <span> ”</span>
           </div>
         </div>
-        <Icon w={8} h={8} as={FaGithubSquare} color={"white"}></Icon>
+        <Link href="https://www.instagram.com/pnp_mc">
+          <Icon w={8} h={8} as={FaInstagram} color={"white"}></Icon>
+        </Link>
       </div>
       <div className="w-full  flex flex-col h-screen items-center md:justify-normal pt-20  bg-gray-800 ">
         <div className=" text-white w-full md:w-2/3 text-center">
